@@ -23,7 +23,7 @@ RUN set -x; \
 # Install Odoo
 ENV ODOO_VERSION master
 ENV ODOO_NAME 9.0alpha1
-ENV ODOO_RELEASE 20150501
+ENV ODOO_RELEASE 20150626
 RUN set -x; \
         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_NAME}.${ODOO_RELEASE}_all.deb \
         && dpkg --force-depends -i odoo.deb \
